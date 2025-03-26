@@ -5,6 +5,8 @@ const app = express()
 const { router } = require("./routes/indexRoute")
 const indexRoute = router
 const newMessageRoute = require("./routes/newMessageRoute")
+const messageDetailsRoute = require("./routes/messageDetailsRoute")
+
 // Set up EJS
 const path = require("path")
 const layouts = require("express-ejs-layouts")
@@ -17,7 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use("/", indexRoute)
 app.use("/new", newMessageRoute)
-
+app.use("/messages", messageDetailsRoute)
 app.listen(8080, () => {
   console.log("Listening on port 8080...")
 })
