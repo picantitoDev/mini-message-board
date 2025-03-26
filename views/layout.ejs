@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WAAAA</title>
+    <title><%= title %></title>
   </head>
   <body>
-    <h1>This is in the layout file</h1>
-    <%- include('index.ejs') %>
+    <header>
+      <h1>Mini Message Board</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/new">New Message</a>
+      </nav>
+    </header>
+
+    <main><%- body %></main>
+
+    <footer>
+      <p>© 2024 Mini Message Board</p>
+    </footer>
   </body>
 </html>
