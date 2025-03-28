@@ -18,7 +18,7 @@ app.set("view engine", "ejs")
 app.use(express.urlencoded({ extended: true }))
 
 // Set up static files
-app.use(express.static("public"))
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use("/", indexRoute)
 app.use("/new", newMessageRoute)
