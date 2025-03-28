@@ -1,0 +1,32 @@
+/* Center content on the page */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 50px;
+}
+
+/* Error message styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+/* Home link styling */
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
